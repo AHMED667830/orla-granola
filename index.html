@@ -4,17 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>أورلا | جرانولا كما
-    يفترض أن تكون – Orla Granola</title>
+  <title>أورلا | جرانولا كما يفترض أن تكون</title>
   <meta name="description"
-    content="أورلا جرانولا صحية محمّصة بدفعات صغيرة من الشوفان والمكسرات والبذور، محلّاة بالعسل الأصلي بدون سكر مكرر أو مواد حافظة. اطلب الآن عبر واتساب.">
+    content="أورلا جرانولا صحية محمّصة بدفعات صغيرة من الشوفان والمكسرات والبذور، محلّاة بالعسل الأصلي بدون سكر مكرر أو مواد حافظة. اطلب الآن.">
   <meta name="theme-color" content="#F7E9CE">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="أورلا">
+  <meta name="keywords" content="جرانولا, جرانولا صحية, شوفان, مكسرات, عسل طبيعي, أورلا, السعودية">
   <link rel="canonical" href="https://orla-granola.sa/">
 
   <!-- Favicons -->
-  <link rel="icon" href="/assets/logo.webp" sizes="any">
-  <link rel="icon" type="image/png" href="/assets/logo.webp" sizes="192x192">
-  <link rel="apple-touch-icon" href="/assets/logo.webp">
+ <!-- ✅ الكود الجديد -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/logo/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
@@ -23,8 +28,14 @@
   <meta property="og:title" content="أورلا | جرانولا طبيعية بالعسل والمكسرات">
   <meta property="og:description" content="جرانولا محمّصة بدفعات صغيرة من مكونات حقيقية بدون سكر مكرر.">
   <meta property="og:url" content="https://orla-granola.sa/">
-  <meta property="og:image" content="https://orla-granola.sa/assets/og-image.jpg">
+  <meta property="og:image" content="https://orla-granola.sa/assets/logo.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="علبة جرانولا أورلا مع الشعار">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="أورلا | جرانولا طبيعية بالعسل والمكسرات">
+  <meta name="twitter:description" content="جرانولا محمّصة بدفعات صغيرة من مكونات حقيقية بدون سكر مكرر.">
+  <meta name="twitter:image" content="https://orla-granola.sa/assets/logo.webp">
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -33,35 +44,140 @@
     "@graph": [
       {
         "@type": "Organization",
+        "@id": "https://orla-granola.sa/#organization",
         "name": "أورلا",
         "alternateName": "Orla Granola",
         "url": "https://orla-granola.sa/",
-        "logo": "https://orla-granola.sa/assets/logo.webp",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://orla-granola.sa/assets/logo.webp",
+          "width": 512,
+          "height": 512
+        },
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+966533576313",
           "contactType": "customer service",
-          "availableLanguage": "Arabic"
-        }
+          "availableLanguage": ["Arabic", "English"],
+          "areaServed": "SA"
+        },
+        "sameAs": [
+          "https://www.instagram.com/orla.granola/",
+          "https://www.tiktok.com/@orla.granola"
+        ]
       },
       {
         "@type": "WebSite",
+        "@id": "https://orla-granola.sa/#website",
         "name": "أورلا",
         "url": "https://orla-granola.sa/",
-        "inLanguage": "ar"
+        "inLanguage": "ar",
+        "publisher": { "@id": "https://orla-granola.sa/#organization" }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://orla-granola.sa/#product",
+        "name": "جرانولا أورلا",
+        "description": "جرانولا محمّصة بدفعات صغيرة من الشوفان الكامل والمكسرات والبذور، محلّاة بالعسل الأصلي بدون سكر مكرر أو مواد حافظة.",
+        "image": [
+          "https://orla-granola.sa/assets/jar-480.webp",
+          "https://orla-granola.sa/assets/logo.webp"
+        ],
+        "brand": { "@type": "Brand", "name": "أورلا" },
+        "category": "Food & Beverage",
+        "weight": { "@type": "QuantitativeValue", "value": 200, "unitCode": "GRM" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://orla-granola.sa/",
+          "priceCurrency": "SAR",
+          "price": "29",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@id": "https://orla-granola.sa/#organization" }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "2",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "ضاري" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "رهيب قوة والله أتحمس أقوم عشان أفطر عليه. جربت أكثر من واحد عقبه عجزت أتقبلهن.. أنصح وبقوة"
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "أحمد" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "منتج غذائي مميز، حمص بشكل ممتاز ومكوناته الغذائية عالية جداً، صار وجبة مهمة أثناء فطوري كل يوم."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://orla-granola.sa/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "هل الجرانولا خالية من السكر المضاف؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "نعم، نعتمد في تحليتها كليًا على المحليات الطبيعية مثل العسل، ولا نستخدم أي سكر أبيض مكرر أبدًا."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "هل المنتج مناسب لأصحاب الحساسية؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "نوضح بشفافية جميع المكونات على العلبة. منتجاتنا تحتوي شوفانًا ومكسرات، يرجى قراءة المكونات جيدًا للتأكد من مواءمتها لنظامك الغذائي."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "كم عدد السعرات الحرارية في الحصة؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "الحصة الموصى بها (حوالي 30 غرامًا) مدروسة بعناية، وتقابلها 162 سعرة حرارية والجدول الغذائي الكامل موضح خلف العلبة بشفافية تامة."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "كم مدة التوصيل؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "تصل الطلبات خلال مدة تتراوح من 5 إلى 10 أيام."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://orla-granola.sa/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://orla-granola.sa/"
+          }
+        ]
       }
     ]
   }
   </script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HB1W35QVSR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-HB1W35QVSR');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB1W35QVSR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HB1W35QVSR');
+  </script>
 
   <link rel="preload" as="image" href="assets/jar-240.webp" type="image/webp" fetchpriority="high"
     imagesrcset="assets/jar-240.webp 240w, assets/jar-360.webp 360w, assets/jar-480.webp 480w"
@@ -69,7 +185,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Google Font loads asynchronously so it cannot block first paint. -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
@@ -77,244 +192,63 @@
   </noscript>
 
   <style>
-    /* Local utility CSS: replaces Tailwind CDN in production */
-    .flex {
-      display: flex
-    }
-
-    .inline-block {
-      display: inline-block
-    }
-
-    .items-center {
-      align-items: center
-    }
-
-    .items-start {
-      align-items: flex-start
-    }
-
-    .justify-between {
-      justify-content: space-between
-    }
-
-    .justify-center {
-      justify-content: center
-    }
-
-    .w-full {
-      width: 100%
-    }
-
-    .h-auto {
-      height: auto
-    }
-
-    .w-10 {
-      width: 2.5rem
-    }
-
-    .h-10 {
-      height: 2.5rem
-    }
-
-    .w-52 {
-      width: 13rem
-    }
-
-    .max-w-sm {
-      max-width: 24rem
-    }
-
-    .h-\[100px\] {
-      height: 100px
-    }
-
-    .w-\[100px\] {
-      width: 100px
-    }
-
-    .mx-auto {
-      margin-left: auto;
-      margin-right: auto
-    }
-
-    .mb-1 {
-      margin-bottom: .25rem
-    }
-
-    .mb-4 {
-      margin-bottom: 1rem
-    }
-
-    .mb-5 {
-      margin-bottom: 1.25rem
-    }
-
-    .mb-6 {
-      margin-bottom: 1.5rem
-    }
-
-    .mb-8 {
-      margin-bottom: 2rem
-    }
-
-    .mb-10 {
-      margin-bottom: 2.5rem
-    }
-
-    .mb-16 {
-      margin-bottom: 4rem
-    }
-
-    .p-4 {
-      padding: 1rem
-    }
-
-    .p-5 {
-      padding: 1.25rem
-    }
-
-    .p-6 {
-      padding: 1.5rem
-    }
-
-    .p-7 {
-      padding: 1.75rem
-    }
-
-    .py-4 {
-      padding-top: 1rem;
-      padding-bottom: 1rem
-    }
-
-    .py-5 {
-      padding-top: 1.25rem;
-      padding-bottom: 1.25rem
-    }
-
-    .py-6 {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem
-    }
-
-    .pb-4 {
-      padding-bottom: 1rem
-    }
-
-    .pb-5 {
-      padding-bottom: 1.25rem
-    }
-
-    .px-14 {
-      padding-left: 3.5rem;
-      padding-right: 3.5rem
-    }
-
-    .gap-3 {
-      gap: .75rem
-    }
-
-    .gap-4 {
-      gap: 1rem
-    }
-
-    .space-y-5>*+* {
-      margin-top: 1.25rem
-    }
-
-    .space-y-6>*+* {
-      margin-top: 1.5rem
-    }
-
-    .text-right {
-      text-align: right
-    }
-
-    .text-center {
-      text-align: center
-    }
-
-    .text-sm {
-      font-size: .875rem;
-      line-height: 1.25rem
-    }
-
-    .text-lg {
-      font-size: 1.125rem;
-      line-height: 1.75rem
-    }
-
-    .text-xl {
-      font-size: 1.25rem;
-      line-height: 1.75rem
-    }
-
-    .text-2xl {
-      font-size: 1.5rem;
-      line-height: 2rem
-    }
-
-    .text-3xl {
-      font-size: 1.875rem;
-      line-height: 2.25rem
-    }
-
-    .text-5xl {
-      font-size: 3rem;
-      line-height: 1
-    }
-
-    .font-bold {
-      font-weight: 700
-    }
-
-    .font-semibold {
-      font-weight: 600
-    }
-
-    .leading-none {
-      line-height: 1
-    }
-
-    .leading-relaxed {
-      line-height: 1.625
-    }
-
-    .rounded-full {
-      border-radius: 9999px
-    }
-
-    .inline-block {
-      display: inline-block
-    }
-
-    .transition-transform {
-      transition-property: transform
-    }
-
-    .hover\:-translate-y-1:hover {
-      transform: translateY(-.25rem)
-    }
-
-    .drop-shadow-xl {
-      filter: drop-shadow(0 20px 13px rgba(0, 0, 0, .1))
-    }
+    .flex { display: flex }
+    .inline-block { display: inline-block }
+    .items-center { align-items: center }
+    .items-start { align-items: flex-start }
+    .justify-between { justify-content: space-between }
+    .justify-center { justify-content: center }
+    .w-full { width: 100% }
+    .h-auto { height: auto }
+    .w-10 { width: 2.5rem }
+    .h-10 { height: 2.5rem }
+    .w-52 { width: 13rem }
+    .max-w-sm { max-width: 24rem }
+    .h-\[100px\] { height: 100px }
+    .w-\[100px\] { width: 100px }
+    .mx-auto { margin-left: auto; margin-right: auto }
+    .mb-1 { margin-bottom: .25rem }
+    .mb-4 { margin-bottom: 1rem }
+    .mb-5 { margin-bottom: 1.25rem }
+    .mb-6 { margin-bottom: 1.5rem }
+    .mb-8 { margin-bottom: 2rem }
+    .mb-10 { margin-bottom: 2.5rem }
+    .mb-16 { margin-bottom: 4rem }
+    .p-4 { padding: 1rem }
+    .p-5 { padding: 1.25rem }
+    .p-6 { padding: 1.5rem }
+    .p-7 { padding: 1.75rem }
+    .py-4 { padding-top: 1rem; padding-bottom: 1rem }
+    .py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem }
+    .py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem }
+    .pb-4 { padding-bottom: 1rem }
+    .pb-5 { padding-bottom: 1.25rem }
+    .px-14 { padding-left: 3.5rem; padding-right: 3.5rem }
+    .gap-3 { gap: .75rem }
+    .gap-4 { gap: 1rem }
+    .space-y-5>*+* { margin-top: 1.25rem }
+    .space-y-6>*+* { margin-top: 1.5rem }
+    .text-right { text-align: right }
+    .text-center { text-align: center }
+    .text-sm { font-size: .875rem; line-height: 1.25rem }
+    .text-lg { font-size: 1.125rem; line-height: 1.75rem }
+    .text-xl { font-size: 1.25rem; line-height: 1.75rem }
+    .text-2xl { font-size: 1.5rem; line-height: 2rem }
+    .text-3xl { font-size: 1.875rem; line-height: 2.25rem }
+    .text-5xl { font-size: 3rem; line-height: 1 }
+    .font-bold { font-weight: 700 }
+    .font-semibold { font-weight: 600 }
+    .leading-none { line-height: 1 }
+    .leading-relaxed { line-height: 1.625 }
+    .rounded-full { border-radius: 9999px }
+    .transition-transform { transition-property: transform }
+    .hover\:-translate-y-1:hover { transform: translateY(-.25rem) }
+    .drop-shadow-xl { filter: drop-shadow(0 20px 13px rgba(0, 0, 0, .1)) }
 
     @media (min-width:768px) {
-      .md\:w-60 {
-        width: 15rem
-      }
-
-      .md\:text-3xl {
-        font-size: 1.875rem;
-        line-height: 2.25rem
-      }
-
-      .md\:text-6xl {
-        font-size: 3.75rem;
-        line-height: 1
-      }
+      .md\:w-60 { width: 15rem }
+      .md\:text-3xl { font-size: 1.875rem; line-height: 2.25rem }
+      .md\:text-6xl { font-size: 3.75rem; line-height: 1 }
     }
 
     :root {
@@ -331,14 +265,8 @@
       padding-bottom: env(safe-area-inset-bottom, 0px);
     }
 
-    html {
-      scroll-padding-top: env(safe-area-inset-top, 0px);
-      background: var(--bg);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
+    html { scroll-padding-top: env(safe-area-inset-top, 0px); background: var(--bg); }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -361,16 +289,8 @@
       height: 15rem;
       border-radius: 50%;
     }
-
-    body:before {
-      top: -8rem;
-      right: -7rem;
-    }
-
-    body:after {
-      bottom: -9rem;
-      left: -8rem;
-    }
+    body:before { top: -8rem; right: -7rem; }
+    body:after { bottom: -9rem; left: -8rem; }
 
     .noise {
       position: fixed;
@@ -382,63 +302,25 @@
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     }
 
-    .wrap {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 1.25rem 1.5rem 3.5rem;
-    }
+    .wrap { max-width: 640px; margin: 0 auto; padding: 1.25rem 1.5rem 0; }
 
-    :focus-visible {
-      outline: 2px solid var(--ink);
-      outline-offset: 4px;
-    }
+    :focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
 
-    nav {
-      border-bottom: 1px solid var(--line);
-      position: relative;
-    }
-
-    nav:after {
-      content: "";
-      position: absolute;
-      bottom: -2px;
-      right: 0;
-      width: 3.5rem;
-      height: 3px;
-      background: var(--ink);
-    }
-
-    nav img {
-      filter: none;
-    }
-
+    nav { border-bottom: 1px solid var(--line); position: relative; }
+    nav img { filter: none; }
     nav button {
       color: var(--ink) !important;
-
       width: 2.75rem;
       height: 2.75rem;
-
       line-height: 1;
       font-family: inherit;
       transition: none;
       background: transparent;
-      
     }
+    nav button:hover { background: transparent; transform: none; }
 
-    nav button:hover {
-      background: transparent;
-      transform: none;
-    }
-
-    header {
-      position: relative;
-      padding-top: 2.5rem;
-    }
-
-    h1 {
-      letter-spacing: -.035em;
-    }
-
+    header { position: relative; padding-top: 2.5rem; }
+    h1 { letter-spacing: -.035em; }
     header h1:after {
       content: "";
       display: block;
@@ -447,23 +329,11 @@
       background: var(--ink);
       margin: 1.5rem auto 0;
     }
+    header p { color: var(--ink-soft) !important; }
+    header>div:last-child { margin-top: 2rem; }
+    header>div:last-child img { filter: drop-shadow(0 22px 16px rgba(88, 72, 39, .17)); }
 
-    header p {
-      color: var(--ink-soft) !important;
-    }
-
-    header>div:last-child {
-      margin-top: 2rem;
-    }
-
-    header>div:last-child img {
-      filter: drop-shadow(0 22px 16px rgba(88, 72, 39, .17));
-    }
-
-    section h2 {
-      letter-spacing: -.02em;
-    }
-
+    section h2 { letter-spacing: -.02em; }
     section h2:before {
       content: "—";
       display: inline-block;
@@ -481,7 +351,6 @@
       position: relative;
       overflow: hidden;
     }
-
     section>div[style*="background:var(--ink)"]:after {
       content: "";
       position: absolute;
@@ -501,14 +370,8 @@
       padding: 1.35rem 1.15rem !important;
       box-shadow: 0 8px 20px rgba(88, 72, 39, .045);
     }
-
-    .space-y-6>div[style*="border"]:nth-child(2) {
-      border-right-color: rgba(88, 72, 39, .65) !important;
-    }
-
-    .space-y-6>div[style*="border"]:nth-child(3) {
-      border-right-color: rgba(88, 72, 39, .4) !important;
-    }
+    .space-y-6>div[style*="border"]:nth-child(2) { border-right-color: rgba(88, 72, 39, .65) !important; }
+    .space-y-6>div[style*="border"]:nth-child(3) { border-right-color: rgba(88, 72, 39, .4) !important; }
 
     .badge-num {
       background: var(--ink);
@@ -521,25 +384,11 @@
 
     .text-lg[style*="color:var(--ink-soft)"],
     .text-xl[style*="color:var(--ink-soft)"],
-    span[style*="color:var(--ink-soft)"] {
-      color: var(--ink-soft) !important;
-    }
+    span[style*="color:var(--ink-soft)"] { color: var(--ink-soft) !important; }
 
-    section:nth-of-type(3) .space-y-5 {
-      border-top: 1px solid var(--line);
-    }
-
-    section:nth-of-type(3) .space-y-5 p {
-      padding: 1.1rem 0;
-      border-bottom: 1px solid var(--line);
-      margin: 0 !important;
-    }
-
-    section:nth-of-type(3) strong {
-      font-weight: 700;
-      display: block;
-      margin-bottom: .2rem;
-    }
+    section:nth-of-type(3) .space-y-5 { border-top: 1px solid var(--line); }
+    section:nth-of-type(3) .space-y-5 p { padding: 1.1rem 0; border-bottom: 1px solid var(--line); margin: 0 !important; }
+    section:nth-of-type(3) strong { font-weight: 700; display: block; margin-bottom: .2rem; }
 
     section:nth-of-type(4)>div {
       background: transparent !important;
@@ -547,31 +396,16 @@
       border-radius: 0 !important;
       box-shadow: none !important;
     }
-
     section:nth-of-type(4)>div>div:last-child {
       background: transparent !important;
       color: var(--ink) !important;
       border-radius: 0 !important;
     }
+    section:nth-of-type(4)>div>div:last-child p { color: var(--ink) !important; }
+    section:nth-of-type(4)>div>div:first-child { border-color: transparent !important; }
+    section:nth-of-type(4) .rounded-full { background: var(--ink) !important; color: var(--bg) !important; }
+    section:nth-of-type(5)>div { border-color: var(--line) !important; }
 
-    section:nth-of-type(4)>div>div:last-child p {
-      color: var(--ink) !important;
-    }
-
-    section:nth-of-type(4)>div>div:first-child {
-      border-color: transparent !important;
-    }
-
-    section:nth-of-type(4) .rounded-full {
-      background: var(--ink) !important;
-      color: var(--bg) !important;
-    }
-
-    section:nth-of-type(5)>div {
-      border-color: var(--line) !important;
-    }
-
-    /* FAQ: preserve the original Tailwind button appearance */
     .faq-btn {
       appearance: none;
       -webkit-appearance: none;
@@ -594,97 +428,220 @@
       cursor: pointer;
       transition: padding .2s ease;
     }
+    .faq-btn:hover { padding-right: .45rem; }
+    .plus { font-family: Arial, sans-serif; font-weight: 300; }
 
-    .faq-btn:hover {
-      padding-right: .45rem;
-    }
-
-    .plus {
-      font-family: Arial, sans-serif;
-      font-weight: 300;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding-top: 2.5rem;
+    footer.orla-footer {
+      --footer-bg: #574727;
+      --footer-ink: #F4E8CD;
+      width: 100vw;
+      margin-inline: calc(50% - 50vw);
+      margin-top: 4.5rem;
+      padding: 0;
+      border: 0;
       position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      color: var(--footer-ink);
+      background: var(--footer-bg);
+      border-radius: 2.15rem 2.15rem 0 0;
+      box-shadow: 0 -18px 42px rgba(88, 72, 39, .14);
+      transition: opacity .7s cubic-bezier(.2, .7, .3, 1), transform .7s cubic-bezier(.2, .7, .3, 1);
+    }
+    footer.orla-footer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .17;
+      background: radial-gradient(circle at 12% 8%, rgba(244, 232, 205, .28), transparent 28%),
+                  radial-gradient(circle at 88% 88%, rgba(244, 232, 205, .16), transparent 30%);
     }
 
-    footer:before {
-      content: "صُنع على مهل";
-      display: block;
-      font-size: .9rem;
-      letter-spacing: .08em;
-      opacity: .58;
-      margin-bottom: .75rem;
+    .footer-file-tab {
+      appearance: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 5rem;
+      padding: 1.2rem 1.5rem;
+      border: 0;
+      border-bottom: 1px solid rgba(244, 232, 205, .22);
+      color: var(--footer-ink);
+      background: transparent;
+      font: inherit;
+      font-size: 1.35rem;
+      cursor: pointer;
+      transition: background .25s ease;
+    }
+    .footer-file-tab:hover { background: rgba(244, 232, 205, .08); }
+    .footer-file-tab:focus-visible { outline-color: var(--footer-ink); outline-offset: -4px; }
+
+    .footer-chevron {
+      display: inline-block;
+      margin-right: .65rem;
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+      line-height: 1;
+      transform: translateY(-.08rem);
+      transition: transform .45s cubic-bezier(.2, .7, .3, 1);
     }
 
-    footer a {
-      background: var(--ink) !important;
-      color: var(--bg) !important;
-      border-radius: 0 !important;
-      box-shadow: 6px 6px 0 var(--paper-deep);
-      transition: transform .2s ease, box-shadow .2s ease !important;
-      text-decoration: none;
+    .footer-panel {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-1.25rem) scale(.985);
+      transform-origin: top center;
+      transition: max-height .8s cubic-bezier(.2, .7, .3, 1), opacity .45s ease,
+                  transform .8s cubic-bezier(.2, .7, .3, 1), padding .8s cubic-bezier(.2, .7, .3, 1);
+      padding: 0 1.5rem;
     }
-
-    footer a:hover {
-      transform: translate(3px, 3px) !important;
-      box-shadow: 3px 3px 0 var(--paper-deep);
-    }
-
-    .hero-media {
+    footer.orla-footer.is-open .footer-panel {
+      max-height: 38rem;
       opacity: 1;
       transform: none;
+      padding: 2.4rem 1.5rem 2.1rem;
     }
+    footer.orla-footer.is-open .footer-chevron { transform: rotate(180deg) translateY(.08rem); }
+
+    .footer-panel-inner { max-width: 640px; margin: 0 auto; }
+    .footer-eyebrow {
+      display: block;
+      margin-bottom: 1.7rem;
+      color: rgba(244, 232, 205, .7);
+      font-size: 1rem;
+      letter-spacing: .08em;
+    }
+
+    .footer-grid {
+      direction: rtl;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(1.25rem, 5vw, 3rem);
+      min-height: 7.7rem;
+    }
+    .footer-credential {
+      min-width: 7.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .55rem;
+      text-align: center;
+    }
+    .footer-credential img { width: 3.25rem; height: 3.25rem; object-fit: contain; }
+    .footer-document {
+      direction: ltr;
+      color: var(--footer-ink);
+      font-family: Arial, sans-serif;
+      font-size: .78rem;
+      letter-spacing: .08em;
+    }
+    .footer-divider {
+      color: rgba(244, 232, 205, .55);
+      font-family: Arial, sans-serif;
+      font-size: 2.2rem;
+      font-weight: 200;
+      line-height: 1;
+    }
+    .footer-socials { display: flex; align-items: center; justify-content: center; gap: .7rem; }
+    .footer-social {
+      width: 3.1rem;
+      height: 3.1rem;
+      display: grid;
+      place-items: center;
+      padding: 0;
+      border: 2px solid var(--footer-ink) !important;
+      border-radius: 50% !important;
+      background: var(--footer-ink) !important;
+      box-shadow: none !important;
+      overflow: hidden;
+      text-decoration: none;
+      transition: transform .25s ease, background .25s ease, border-color .25s ease !important;
+    }
+    .footer-social:hover {
+      transform: translateY(-.25rem) !important;
+      border-color: var(--footer-ink) !important;
+      background: rgba(244, 232, 205, .85) !important;
+    }
+    .footer-social img { width: 1.55rem; height: 1.55rem; object-fit: contain; }
+
+    .footer-order {
+      border-bottom: 1px solid rgba(244, 232, 205, .2);
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+    .footer-order h2 { margin-bottom: 1.25rem; color: var(--footer-ink); }
+
+    .footer-order-link {
+      display: inline-block;
+      padding: .65rem 2.6rem;
+      border: 1px solid rgba(244, 232, 205, .58);
+      border-radius: 999px;
+      color: var(--footer-bg) !important;
+      background: var(--footer-ink) !important;
+      box-shadow: 5px 5px 0 rgba(244, 232, 205, .25) !important;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: transform .25s ease, box-shadow .25s ease !important;
+      width: 10rem;
+      margin: auto;
+    }
+    .footer-order-link:hover {
+      transform: translate(3px, 3px) !important;
+      box-shadow: 2px 2px 0 rgba(244, 232, 205, .25) !important;
+    }
+
+    .footer-policy-link {
+      display: inline-block;
+      padding: .45rem 1.35rem;
+      color: var(--footer-ink) !important;
+      background: transparent !important;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: transform .2s ease, background .2s ease !important;
+    }
+    .footer-policy-link:hover { transform: translateY(-2px) !important; }
+    .footer-edit-note { margin: 1.4rem 0 0; color: rgba(244, 232, 205, .55); font-size: .85rem; }
+
+    @media (max-width:480px) {
+      footer.orla-footer.is-open .footer-panel { padding-inline: 1rem; }
+      .footer-file-tab { padding-inline: 1rem; font-size: 1.18rem; }
+      .footer-grid { gap: .85rem; }
+      .footer-credential { min-width: 6rem; }
+      .footer-socials { gap: .35rem; }
+      .footer-social { width: 2.7rem; height: 2.7rem; }
+      .footer-social img { width: 1.3rem; height: 1.3rem; }
+    }
+
+    .span-1 { margin: 1rem; }
+    .hero-media { opacity: 1; transform: none; }
 
     .reveal {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity .7s cubic-bezier(.2, .7, .3, 1), transform .7s cubic-bezier(.2, .7, .3, 1);
     }
-
-    .reveal.on {
-      opacity: 1;
-      transform: none;
-    }
+    .reveal.on { opacity: 1; transform: none; }
 
     @keyframes float {
-
-      0%,
-      100% {
-        transform: translateY(0) rotate(-1deg)
-      }
-
-      50% {
-        transform: translateY(-10px) rotate(1deg)
-      }
+      0%, 100% { transform: translateY(0) rotate(-1deg) }
+      50% { transform: translateY(-10px) rotate(1deg) }
     }
+    .jar-float { will-change: transform; animation: float 6s ease-in-out infinite; }
 
-    .jar-float {
-      will-change: transform;
-      animation: float 6s ease-in-out infinite;
-    }
-
-    .acc {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .35s ease;
-    }
-
-    .faq-btn[aria-expanded="true"] .plus {
-      transform: rotate(45deg);
-    }
-
-    .mobile-menu {
-      display: none;
-    }
+    .acc { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .faq-btn[aria-expanded="true"] .plus { transform: rotate(45deg); }
+    .mobile-menu { display: none; }
 
     @media (max-width:767px) {
-      nav {
-        z-index: 10;
-      }
-
+      nav { z-index: 10; }
       nav #menu-toggle {
         display: flex;
         align-items: center;
@@ -695,18 +652,8 @@
         background: transparent;
         border: none;
       }
-
-      nav #menu-toggle:before {
-        content: "≡";
-        font-size: 1.75rem;
-        line-height: 1;
-        transition: transform .2s ease;
-      }
-
-      nav #menu-toggle[aria-expanded="true"]:before {
-        content: "×";
-        font-size: 2rem;
-      }
+      nav #menu-toggle:before { content: "≡"; font-size: 1.75rem; line-height: 1; transition: transform .2s ease; }
+      nav #menu-toggle[aria-expanded="true"]:before { content: "×"; font-size: 2rem; }
 
       .mobile-menu {
         position: absolute;
@@ -726,14 +673,12 @@
         transform: translateY(-8px);
         transition: opacity .22s ease, transform .22s ease, visibility .22s ease;
       }
-
       .mobile-menu.is-open {
         visibility: visible;
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0);
       }
-
       .mobile-menu a {
         display: block;
         padding: .7rem .85rem;
@@ -742,15 +687,8 @@
         font-size: 1.2rem;
         border-bottom: 1px solid rgba(88, 72, 39, .12);
       }
-
-      .mobile-menu a:last-child {
-        border-bottom: 0;
-      }
-
-      .mobile-menu a:hover {
-        opacity: .65;
-      }
-
+      .mobile-menu a:last-child { border-bottom: 0; }
+      .mobile-menu a:hover { opacity: .65; }
       .mobile-menu .menu-order {
         margin-top: .35rem;
         background: var(--ink);
@@ -761,12 +699,7 @@
     }
 
     @media (min-width:768px) {
-      nav #menu-toggle {
-        display: none;
-      }
-    }
-
-    @media (min-width:768px) {
+      nav #menu-toggle { display: none; }
       .mobile-menu {
         display: flex;
         position: static;
@@ -782,7 +715,6 @@
         border: 0;
         box-shadow: none;
       }
-
       .mobile-menu a {
         padding: 0;
         border-bottom: 0;
@@ -791,22 +723,14 @@
         text-decoration: none;
         transition: opacity .2s ease;
       }
-
-      .mobile-menu a:hover {
-        opacity: .65;
-
-      }
-
+      .mobile-menu a:hover { opacity: .65; }
       .mobile-menu .menu-order {
         margin-top: 0;
         background: var(--ink);
         color: var(--bg);
         padding: .55rem 1.4rem;
       }
-
-      .mobile-menu .menu-order:hover {
-        opacity: .85;
-      }
+      .mobile-menu .menu-order:hover { opacity: .85; }
     }
 
     #benefits .space-y-6>div[style*="border"] {
@@ -814,7 +738,6 @@
       flex-direction: row !important;
       text-align: right;
     }
-
     #benefits .space-y-6>div[style*="border"] .badge-num {
       width: 3.15rem;
       height: 3.15rem;
@@ -826,10 +749,7 @@
       font-size: 1.2rem;
     }
 
-    #reviews {
-      display: block;
-    }
-
+    #reviews { display: block; }
     #reviews .reviews-carousel {
       max-width: 28rem;
       min-height: 28rem;
@@ -841,14 +761,7 @@
       -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 9%, #000 91%, transparent 100%);
       mask-image: linear-gradient(to right, transparent 0%, #000 9%, #000 91%, transparent 100%);
     }
-
-    #reviews .reviews-track {
-      position: relative;
-      min-height: 27rem;
-      width: 100%;
-      direction: ltr;
-    }
-
+    #reviews .reviews-track { position: relative; min-height: 27rem; width: 100%; direction: ltr; }
     #reviews .review-card {
       position: absolute;
       inset: .35rem 0 auto;
@@ -862,20 +775,8 @@
       will-change: transform, opacity;
       backface-visibility: hidden;
     }
-
-    #reviews .review-card.is-active {
-      opacity: 1;
-      transform: translateX(0) scale(1);
-      z-index: 2;
-      pointer-events: auto;
-    }
-
-    #reviews .review-card.is-exit {
-      opacity: 0;
-      transform: translateX(-112%) scale(.96);
-      z-index: 1;
-    }
-
+    #reviews .review-card.is-active { opacity: 1; transform: translateX(0) scale(1); z-index: 2; pointer-events: auto; }
+    #reviews .review-card.is-exit { opacity: 0; transform: translateX(-112%) scale(.96); z-index: 1; }
     #reviews .review-card {
       color: var(--ink);
       background: transparent !important;
@@ -883,27 +784,13 @@
       border-radius: 0 !important;
       box-shadow: none !important;
     }
-
     #reviews .review-card .font-semibold,
-    #reviews .review-card .review-question {
-      color: var(--ink) !important;
-    }
+    #reviews .review-card .review-question { color: var(--ink) !important; }
 
     @media (prefers-reduced-motion:reduce) {
-      .reveal {
-        opacity: 1 !important;
-        transform: none !important;
-        transition: none !important
-      }
-
-      .jar-float {
-        animation: none !important
-      }
-
-      .plus,
-      .acc {
-        transition: none !important
-      }
+      .reveal { opacity: 1 !important; transform: none !important; transition: none !important }
+      .jar-float { animation: none !important }
+      .plus, .acc { transition: none !important }
     }
   </style>
 </head>
@@ -912,176 +799,218 @@
   <div class="noise" aria-hidden="true"></div>
   <div class="wrap">
 
-    <nav class="flex items-center justify-between py-6 reveal">
-      <img src="assets/logo.webp" width="100" height="100" decoding="async" alt="أورلا" class="h-[100px] w-[100px]">
-      <button id="menu-toggle" aria-label="فتح القائمة" aria-expanded="false" class="text-2xl"
-        style="color:var(--ink)">≡</button>
+    <nav class="flex items-center justify-between py-6 reveal" aria-label="القائمة الرئيسية">
+      <img src="assets/logo.webp" width="100" height="100" decoding="async" alt="شعار أورلا للجرانولا"
+        class="h-[100px] w-[100px]">
+      <button id="menu-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu"
+        class="text-2xl" style="color:var(--ink)">≡</button>
       <div id="mobile-menu" class="mobile-menu">
         <a href="#about">عن الجرانولا</a>
         <a href="#benefits">الفوائد</a>
         <a href="#difference">ما يميزنا</a>
         <a href="#reviews">آراء العملاء</a>
         <a href="#faq">الأسئلة الشائعة</a>
-        <a class="menu-order" href="https://wa.me/966533576313">اطلب الآن</a>
+        <a class="menu-order" href="https://wa.me/966533576313" rel="noopener noreferrer">اطلب الآن</a>
       </div>
     </nav>
 
     <main id="main">
-    <header class="text-center mb-16">
-      <h1 class="reveal text-5xl md:text-6xl leading-[1.15] font-semibold mb-6">
-        جرانولا كما<br>يفترض أن تكون
-      </h1>
-      <p class="reveal text-xl leading-relaxed max-w-sm mx-auto mb-10"
-        style="color:var(--ink-soft);transition-delay:.05s">
-        محمّصة بدفعات صغيرة، من مكونات حقيقية، لين آخر ملعقة.
-      </p>
-      <div class="hero-media flex justify-center">
-        <img src="assets/jar-360.webp"
-          srcset="assets/jar-240.webp 240w, assets/jar-360.webp 360w, assets/jar-480.webp 480w"
-          sizes="(min-width: 768px) 240px, 208px"
-          width="700" height="700" fetchpriority="high" decoding="async"
-          alt="علبة جرانولا أورلا" class="jar-float w-52 md:w-60 h-auto drop-shadow-xl">
-      </div>
-    </header>
-
-    <section id="about" class="reveal mb-16">
-      <h2 class="text-3xl font-semibold mb-5 text-center">ما هي الجرانولا؟</h2>
-      <div class="p-7 text-center" style="background:var(--ink);color:var(--bg);border-radius:4px">
-        <p class="text-xl leading-relaxed">
-          الجرانولا هي وقودك الطبيعي لبداية يوم مليء بالحيوية. مزيج فاخر ومقرمش من الشوفان الكامل، والمكسرات المحمصة،
-          والبذور المحمصة، بعناية مع لمسة من الحلاوة الطبيعية، للجمع بين المذاق اللذيذ والقيمة الغذائية العالية.
+      <header class="text-center mb-16">
+        <h1 class="reveal text-5xl md:text-6xl leading-[1.15] font-semibold mb-6">
+          جرانولا كما<br>يفترض أن تكون
+        </h1>
+        <p class="reveal text-xl leading-relaxed max-w-sm mx-auto mb-10"
+          style="color:var(--ink-soft);transition-delay:.05s">
+          محمّصة بدفعات صغيرة، من مكونات حقيقية، لين آخر ملعقة.
         </p>
-      </div>
-    </section>
+        <div class="hero-media flex justify-center">
+          <img src="assets/jar-480.webp"
+            sizes="(min-width: 768px) 240px, 208px" width="700" height="700" fetchpriority="high" decoding="async"
+            alt="علبة جرانولا أورلا بحجم 200 غرام" class="jar-float w-52 md:w-60 h-auto drop-shadow-xl">
+        </div>
+      </header>
 
-    <section id="benefits" class="mb-16">
-      <h2 class="reveal text-3xl font-semibold mb-8 text-center">ما هي فوائد الجرانولا؟</h2>
-      <div class="space-y-6">
-        <div class="reveal flex items-start gap-4 p-5" style="border:1.5px solid var(--line);border-radius:4px">
-          <span class="badge-num">1</span>
-          <div>
-            <h3 class="text-2xl mb-1">طاقة مستمرة وشبع طويل</h3>
-            <p class="text-lg leading-relaxed" style="color:var(--ink-soft)">بفضل احتوائها على الشوفان الغني بالألياف،
-              تمنحك طاقة تدوم لساعات وتساعدك على الشعور بالامتلاء، مما يقلل من الرغبة في تناول الوجبات السريعة.</p>
+      <section id="about" class="reveal mb-16" aria-labelledby="about-title">
+        <h2 id="about-title" class="text-3xl font-semibold mb-5 text-center">ما هي الجرانولا؟</h2>
+        <div class="p-7 text-center" style="background:var(--ink);color:var(--bg);border-radius:4px">
+          <p class="text-xl leading-relaxed">
+            الجرانولا هي وقودك الطبيعي لبداية يوم مليء بالحيوية. مزيج فاخر ومقرمش من الشوفان الكامل، والمكسرات المحمصة،
+            والبذور المحمصة، بعناية مع لمسة من الحلاوة الطبيعية، للجمع بين المذاق اللذيذ والقيمة الغذائية العالية.
+          </p>
+        </div>
+      </section>
+
+      <section id="benefits" class="mb-16" aria-labelledby="benefits-title">
+        <h2 id="benefits-title" class="reveal text-3xl font-semibold mb-8 text-center">ما هي فوائد الجرانولا؟</h2>
+        <div class="space-y-6">
+          <div class="reveal flex items-start gap-4 p-5" style="border:1.5px solid var(--line);border-radius:4px">
+            <span class="badge-num">1</span>
+            <div>
+              <h3 class="text-2xl mb-1">طاقة مستمرة وشبع طويل</h3>
+              <p class="text-lg leading-relaxed" style="color:var(--ink-soft)">بفضل احتوائها على الشوفان الغني بالألياف،
+                تمنحك طاقة تدوم لساعات وتساعدك على الشعور بالامتلاء، مما يقلل من الرغبة في تناول الوجبات السريعة.</p>
+            </div>
+          </div>
+          <div class="reveal flex items-start gap-4 p-5"
+            style="border:1.5px solid var(--line);border-radius:4px;transition-delay:.05s">
+            <span class="badge-num">2</span>
+            <div>
+              <h3 class="text-2xl mb-1">دعم صحة القلب والهضم</h3>
+              <p class="text-lg leading-relaxed" style="color:var(--ink-soft)">المكسرات والبذور الموجودة فيها توفر
+                دهونًا صحية مفيدة للقلب، بينما تحسّن الألياف من عملية الهضم وتمنع مشاكل المعدة.</p>
+            </div>
+          </div>
+          <div class="reveal flex items-start gap-4 p-5"
+            style="border:1.5px solid var(--line);border-radius:4px;transition-delay:.1s">
+            <span class="badge-num">3</span>
+            <div>
+              <h3 class="text-2xl mb-1">غنية بالمعادن الأساسية</h3>
+              <p class="text-lg leading-relaxed" style="color:var(--ink-soft)">تمد جسمك بعناصر غذائية هامة مثل الحديد،
+                والمغنيسيوم، والزنك، بالإضافة إلى البروتين النباتي الذي يدعم صحة العضلات.</p>
+            </div>
           </div>
         </div>
-        <div class="reveal flex items-start gap-4 p-5"
-          style="border:1.5px solid var(--line);border-radius:4px;transition-delay:.05s">
-          <span class="badge-num">2</span>
-          <div>
-            <h3 class="text-2xl mb-1">دعم صحة القلب والهضم</h3>
-            <p class="text-lg leading-relaxed" style="color:var(--ink-soft)">المكسرات والبذور الموجودة فيها توفر دهونًا
-              صحية مفيدة للقلب، بينما تحسّن الألياف من عملية الهضم وتمنع مشاكل المعدة.</p>
-          </div>
-        </div>
-        <div class="reveal flex items-start gap-4 p-5"
-          style="border:1.5px solid var(--line);border-radius:4px;transition-delay:.1s">
-          <span class="badge-num">3</span>
-          <div>
-            <h3 class="text-2xl mb-1">غنية بالمعادن الأساسية</h3>
-            <p class="text-lg leading-relaxed" style="color:var(--ink-soft)">تمد جسمك بعناصر غذائية هامة مثل الحديد،
-              والمغنيسيوم، والزنك، بالإضافة إلى البروتين النباتي الذي يدعم صحة العضلات.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="difference" class="reveal mb-16">
-      <h2 class="text-3xl font-semibold mb-6 text-center">ما يميزنا عن غيرنا؟</h2>
-      <div class="space-y-5">
-        <p class="text-xl leading-relaxed"><strong>المكونات الطبيعية والمحلية:</strong> اعتماد كامل على محليات طبيعية
-          مثل العسل الأصلي، وخلوّ تام من السكر المكرر والزيوت المهدرجة والمواد الحافظة.</p>
-        <p class="text-xl leading-relaxed"><strong>التحضير الطازج:</strong> تُحضّر بكميات مدروسة للحفاظ على القرمشة
-          والنكهة، عكس المنتجات التجارية التي تفقد جودتها بعد تخزينها لأشهر.</p>
-        <p class="text-xl leading-relaxed"><strong>شفافية التغليف:</strong> تصميم أنيق يبرز المكونات الحقيقية، مع كتابة
-          السعرات الحرارية والقيم الغذائية بشفافية تامة.</p>
-      </div>
-    </section>
+      <section id="difference" class="reveal mb-16" aria-labelledby="difference-title">
+        <h2 id="difference-title" class="text-3xl font-semibold mb-6 text-center">ما يميزنا عن غيرنا؟</h2>
+        <div class="space-y-5">
+          <p class="text-xl leading-relaxed"><strong>المكونات الطبيعية والمحلية:</strong> اعتماد كامل على محليات طبيعية
+            مثل العسل الأصلي، وخلوّ تام من السكر المكرر والزيوت المهدرجة والمواد الحافظة.</p>
+          <p class="text-xl leading-relaxed"><strong>التحضير الطازج:</strong> تُحضّر بكميات مدروسة للحفاظ على القرمشة
+            والنكهة، عكس المنتجات التجارية التي تفقد جودتها بعد تخزينها لأشهر.</p>
+          <p class="text-xl leading-relaxed"><strong>شفافية التغليف:</strong> تصميم أنيق يبرز المكونات الحقيقية، مع
+            كتابة السعرات الحرارية والقيم الغذائية بشفافية تامة.</p>
+        </div>
+      </section>
 
-    <section id="reviews" class="reveal mb-16">
-      <h2 class="text-3xl font-semibold mb-6 text-center">رأي عملائنا؟</h2>
-      <div class="reviews-carousel" aria-live="polite">
-        <div class="reviews-track">
-          <!-- أضف عملاء جدد هنا: انسخ قالب review-card التالي، ثم غيّر الحرف والاسم والرد. -->
-          <div class="max-w-sm mx-auto p-6 review-card">
-            <div class="flex items-center gap-3 mb-5 pb-4" style="border-bottom:1px solid var(--line)">
-              <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold"
-                style="background:var(--ink);color:var(--bg)">ض</div>
-              <div>
-                <p class="text-lg leading-none font-semibold">ضاري</p>
-                <span class="text-sm" style="color:var(--ink-soft)">عميل موثّق</span>
+      <section id="reviews" class="reveal mb-16" aria-labelledby="reviews-title">
+        <h2 id="reviews-title" class="text-3xl font-semibold mb-6 text-center">رأي عملائنا؟</h2>
+        <div class="reviews-carousel" aria-live="polite">
+          <div class="reviews-track">
+            <div class="max-w-sm mx-auto p-6 review-card">
+              <div class="flex items-center gap-3 mb-5 pb-4" style="border-bottom:1px solid var(--line)">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold"
+                  style="background:var(--ink);color:var(--bg)">ض</div>
+                <div>
+                  <p class="text-lg leading-none font-semibold">ضاري</p>
+                  <span class="text-sm" style="color:var(--ink-soft)">عميل موثّق</span>
+                </div>
+              </div>
+              <p class="text-lg mb-4 review-question" style="color:var(--ink)">شرايك عميلنا العزيز بالمنتج؟ ✨</p>
+              <div class="p-4">
+                <p class="text-xl leading-relaxed">رهيب قوة والله أتحمس أقوم عشان أفطر عليه 😂 جربت أكثر من واحد عقبه
+                  عجزت أتقبلهن.. أنصح وبقوة 👍</p>
               </div>
             </div>
-            <p class="text-lg mb-4 review-question" style="color:var(--ink)">شرايك عميلنا العزيز بالمنتج؟ ✨</p>
-            <div class="p-4">
-              <p class="text-xl leading-relaxed">رهيب قوة والله أتحمس أقوم عشان أفطر عليه 😂 جربت أكثر من واحد عقبه عجزت
-                أتقبلهن.. أنصح وبقوة 👍</p>
-            </div>
-          </div>
-          <div class="max-w-sm mx-auto p-6 review-card">
-            <div class="flex items-center gap-3 mb-5 pb-4" style="border-bottom:1px solid var(--line)">
-              <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold"
-                style="background:var(--ink);color:var(--bg)">أ</div>
-              <div>
-                <p class="text-lg leading-none font-semibold">أحمد</p>
-                <span class="text-sm" style="color:var(--ink-soft)">عميل موثّق</span>
+            <div class="max-w-sm mx-auto p-6 review-card">
+              <div class="flex items-center gap-3 mb-5 pb-4" style="border-bottom:1px solid var(--line)">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold"
+                  style="background:var(--ink);color:var(--bg)">أ</div>
+                <div>
+                  <p class="text-lg leading-none font-semibold">أحمد</p>
+                  <span class="text-sm" style="color:var(--ink-soft)">عميل موثّق</span>
+                </div>
+              </div>
+              <p class="text-lg mb-4 review-question" style="color:var(--ink)">شرايك عميلنا العزيز بالمنتج؟ ✨</p>
+              <div class="p-4">
+                <p class="text-xl leading-relaxed">منتج غذائي مميز، حمص بشكل ممتاز ومكوناته الغذائية عالية جداً، صار
+                  وجبة مهمة أثناء فطوري كل يوم. أنصح به</p>
               </div>
             </div>
-            <p class="text-lg mb-4 review-question" style="color:var(--ink)">شرايك عميلنا العزيز بالمنتج؟ ✨</p>
-            <div class="p-4">
-              <p class="text-xl leading-relaxed">منتج غذائي مميز، حمص بشكل ممتاز ومكوناته الغذائية عالية جداً، صار وجبة
-                مهمة أثناء فطوري كل يوم. أنصح به</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="reveal mb-16" aria-labelledby="faq-title">
+        <h2 id="faq-title" class="text-3xl font-semibold mb-6 text-center">الأسئلة الشائعة؟</h2>
+        <div style="border-top:1px solid var(--line)">
+          <div style="border-bottom:1px solid var(--line)">
+            <button class="faq-btn w-full flex justify-between items-center text-right py-5 text-xl"
+              aria-expanded="false" aria-controls="faq-1">
+              <span>هل الجرانولا خالية من السكر المضاف؟</span><span class="plus text-2xl" aria-hidden="true">+</span>
+            </button>
+            <div class="acc" id="faq-1">
+              <p class="pb-5 text-lg leading-relaxed" style="color:var(--ink-soft)">نعم، نعتمد في تحليتها كليًا على
+                المحليات الطبيعية مثل العسل، ولا نستخدم أي سكر أبيض مكرر أبدًا.</p>
+            </div>
+          </div>
+          <div style="border-bottom:1px solid var(--line)">
+            <button class="faq-btn w-full flex justify-between items-center text-right py-5 text-xl"
+              aria-expanded="false" aria-controls="faq-2">
+              <span>هل المنتج مناسب لأصحاب الحساسية؟</span><span class="plus text-2xl" aria-hidden="true">+</span>
+            </button>
+            <div class="acc" id="faq-2">
+              <p class="pb-5 text-lg leading-relaxed" style="color:var(--ink-soft)">نوضح بشفافية جميع المكونات على
+                العلبة. منتجاتنا تحتوي شوفانًا ومكسرات، يرجى قراءة المكونات جيدًا للتأكد من مواءمتها لنظامك الغذائي.</p>
+            </div>
+          </div>
+          <div style="border-bottom:1px solid var(--line)">
+            <button class="faq-btn w-full flex justify-between items-center text-right py-5 text-xl"
+              aria-expanded="false" aria-controls="faq-3">
+              <span>كم عدد السعرات الحرارية في الحصة؟</span><span class="plus text-2xl" aria-hidden="true">+</span>
+            </button>
+            <div class="acc" id="faq-3">
+              <p class="pb-5 text-lg leading-relaxed" style="color:var(--ink-soft)">الحصة الموصى بها (حوالي 30 غرامًا)
+                مدروسة بعناية، وتقابلها 162 سعرة حرارية والجدول الغذائي الكامل موضح خلف العلبة بشفافية تامة.</p>
+            </div>
+          </div>
+          <div>
+            <button class="faq-btn w-full flex justify-between items-center text-right py-5 text-xl"
+              aria-expanded="false" aria-controls="faq-4">
+              <span>كم مدة التوصيل؟</span><span class="plus text-2xl" aria-hidden="true">+</span>
+            </button>
+            <div class="acc" id="faq-4">
+              <p class="pb-5 text-lg leading-relaxed" style="color:var(--ink-soft)">تصل الطلبات خلال مدة تتراوح من 5 إلى
+                10 أيام.</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="faq" class="reveal mb-16">
-      <h2 class="text-3xl font-semibold mb-6 text-center">الأسئلة الشائعة؟</h2>
-      <div style="border-top:1px solid var(--line)">
-        <div style="border-bottom:1px solid var(--line)">
-          <button class="faq-btn w-full flex justify-between items-center text-right py-5 text-xl"
-            aria-expanded="false">
-            <span>هل الجرانولا خالية من السكر المضاف؟</span><span class="plus text-2xl">+</span>
-          </button>
-          <div class="acc">
-            <p class="pb-5 text-lg leading-relaxed" style="color:var(--ink-soft)">نعم، نعتمد في تحليتها كليًا على
-              المحليات الطبيعية مثل العسل، ولا نستخدم أي سكر أبيض مكرر أبدًا.</p>
-          </div>
-        </div>
-        <div style="border-bottom:1px solid var(--line)">
-          <button class="faq-btn w-full flex justify-between items-center text-right py-5 text-xl"
-            aria-expanded="false">
-            <span>هل المنتج مناسب لأصحاب الحساسية؟</span><span class="plus text-2xl">+</span>
-          </button>
-          <div class="acc">
-            <p class="pb-5 text-lg leading-relaxed" style="color:var(--ink-soft)">نوضح بشفافية جميع المكونات على العلبة.
-              منتجاتنا تحتوي شوفانًا ومكسرات، يرجى قراءة المكونات جيدًا للتأكد من مواءمتها لنظامك الغذائي.</p>
-          </div>
-        </div>
-        <div>
-          <button class="faq-btn w-full flex justify-between items-center text-right py-5 text-xl"
-            aria-expanded="false">
-            <span>كم عدد السعرات الحرارية في الحصة؟</span><span class="plus text-2xl">+</span>
-          </button>
-          <div class="acc">
-            <p class="pb-5 text-lg leading-relaxed" style="color:var(--ink-soft)">الحصة الموصى بها (حوالي 30 غرامًا)
-              مدروسة بعناية، وتقابلها 162 سعرة حرارية والجدول الغذائي الكامل موضح خلف العلبة بشفافية تامة.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
     </main>
 
-    <footer id="order" class="reveal text-center pb-4">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-6">لا تفوّت الحصول على الجرانولا بأسرع وقت!</h2>
-      <a href="https://wa.me/966533576313"
-        class="inline-block text-xl px-14 py-4 rounded-full transition-transform hover:-translate-y-1"
-        style="background:var(--ink);color:var(--bg)">
-        اطلب الآن!
-      </a>
+    <footer id="order" class="orla-footer reveal text-center" aria-labelledby="footer-title">
+      <button class="footer-file-tab" type="button" aria-expanded="false" aria-controls="footer-panel">
+        <span>وصلت للنهاية إضغط هنا</span>
+        <span class="footer-chevron" aria-hidden="true">⌄</span>
+      </button>
+      <div id="footer-panel" class="footer-panel" aria-hidden="true">
+        <div class="footer-panel-inner">
+          <div class="footer-order">
+            <h2 id="footer-title" class="text-2xl md:text-3xl font-semibold mb-6">لا تفوّت الحصول على الجرانولا بأسرع
+              وقت!</h2>
+            <a href="https://wa.me/966533576313" class="footer-order-link" rel="noopener noreferrer">اطلب الآن!</a>
+            <span class="span-1"></span>
+          </div>
+          <div class="footer-grid">
+            <div class="footer-credential">
+              <img src="assets/imgfl.webp" width="80" height="80" loading="lazy" decoding="async"
+                alt="شعار منصة العمل الحر السعودية">
+              <span class="footer-document">FL-916589776</span>
+            </div>
+            <span class="footer-divider" aria-hidden="true">|</span>
+            <nav class="footer-socials" aria-label="روابط التواصل الاجتماعي">
+              <a class="footer-social" href="https://www.tiktok.com/@orla.granola?is_from_webapp=1&sender_device=pc"
+                aria-label="تيك توك" rel="noopener noreferrer" target="_blank">
+                <img src="assets/tiktok.webp" width="64" height="64" loading="lazy" decoding="async" alt="شعار تيك توك">
+              </a>
+              <a class="footer-social" href="https://www.instagram.com/orla.granola/" aria-label="إنستغرام"
+                rel="noopener noreferrer" target="_blank">
+                <img src="assets/instagram.webp" width="64" height="64" loading="lazy" decoding="async"
+                  alt="شعار إنستغرام">
+              </a>
+              <a class="footer-social" href="https://wa.me/966533576313" aria-label="واتساب" rel="noopener noreferrer"
+                target="_blank">
+                <img src="assets/whatsapp.webp" width="64" height="64" loading="lazy" decoding="async"
+                  alt="شعار واتساب">
+              </a>
+            </nav>
+          </div>
+          <a href="privacy-policy.html" class="footer-policy-link">سياسة الخصوصية</a>
+          <p>جميع الحقوق محفوظة لـ orla-granola 2026</p>
+        </div>
+      </div>
     </footer>
 
   </div>
@@ -1107,7 +1036,6 @@
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     if (menuToggle && mobileMenu) {
-      // aria-hidden applies only on mobile (collapsed menu); on desktop the links are always visible
       const mqMobile = window.matchMedia('(max-width: 767px)');
       const syncMenuAria = () => {
         if (mqMobile.matches) {
@@ -1134,6 +1062,7 @@
         syncMenuAria();
       }));
     }
+
     const reviewsTrack = document.querySelector('.reviews-track');
     const reviewCards = reviewsTrack ? Array.from(reviewsTrack.querySelectorAll('.review-card')) : [];
     let reviewIndex = 0;
@@ -1151,11 +1080,11 @@
         showReview(reviewIndex);
       }, 4800);
     }
+
     document.querySelectorAll('.faq-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const panel = btn.nextElementSibling;
         const open = btn.getAttribute('aria-expanded') === 'true';
-        // اقرأ القياسات أولاً (قبل أي كتابة) لتجنّب إعادة الترتيب القسرية
         const height = open ? 0 : panel.scrollHeight;
         requestAnimationFrame(() => {
           document.querySelectorAll('.acc').forEach(p => p.style.maxHeight = null);
@@ -1164,6 +1093,35 @@
         });
       });
     });
+
+    const orlaFooter = document.querySelector('.orla-footer');
+    const footerTab = document.querySelector('.footer-file-tab');
+    const footerPanel = document.querySelector('#footer-panel');
+    const setFooterOpen = (open) => {
+      if (!orlaFooter || !footerTab || !footerPanel) return;
+      orlaFooter.classList.toggle('is-open', open);
+      footerTab.setAttribute('aria-expanded', String(open));
+      footerPanel.setAttribute('aria-hidden', String(!open));
+    };
+    if (orlaFooter && footerTab && footerPanel) {
+      footerTab.addEventListener('click', (event) => {
+        event.preventDefault();
+        setFooterOpen(!orlaFooter.classList.contains('is-open'));
+      });
+      if (prefersReducedMotion) {
+        setFooterOpen(true);
+      } else if ('IntersectionObserver' in window) {
+        const footerOpenObserver = new IntersectionObserver((entries) => {
+          if (entries.some(entry => entry.isIntersecting)) {
+            setFooterOpen(true);
+            footerOpenObserver.disconnect();
+          }
+        }, { threshold: .2, rootMargin: '0px 0px -2% 0px' });
+        footerOpenObserver.observe(orlaFooter);
+      } else {
+        setFooterOpen(true);
+      }
+    }
   </script>
 </body>
 

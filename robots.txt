@@ -1,3 +1,16 @@
 User-agent: *
 Allow: /
+
+# Block nothing essential — allow assets and pages
+Disallow: /assets/*.bak
+Disallow: /*?utm_
+
+# Sitemap
 Sitemap: https://orla-granola.sa/sitemap.xml
+
+# Crawl-delay for aggressive bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

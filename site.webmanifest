@@ -1,0 +1,25 @@
+{
+  "name": "أورلا | جرانولا",
+  "short_name": "أورلا",
+  "description": "جرانولا صحية محمّصة بدفعات صغيرة",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7E9CE",
+  "theme_color": "#F7E9CE",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

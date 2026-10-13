@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://orla-granola.sa/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://orla-granola.sa/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://orla-granola.sa/assets/jar-480.webp</image:loc>
+      <image:title>جرانولا أورلا</image:title>
+      <image:caption>علبة جرانولا أورلا بحجم 200 غرام</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://orla-granola.sa/assets/logo.webp</image:loc>
+      <image:title>شعار أورلا</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://orla-granola.sa/privacy-policy.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>
